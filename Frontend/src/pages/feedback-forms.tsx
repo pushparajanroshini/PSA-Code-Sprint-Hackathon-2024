@@ -16,11 +16,11 @@ import SectionTitle from '../components/Section/Title'
 import SectionTitleLineWithButton from '../components/Section/TitleLineWithButton'
 import { getPageTitle } from '../config'
 
-const FormsPage = () => {
+const FeedbackFormsPage = () => {
   return (
     <>
       <Head>
-        <title>{getPageTitle('Forms')}</title>
+        <title>{getPageTitle('Feedback')}</title>
       </Head>
 
       <SectionMain>
@@ -135,8 +135,8 @@ const FormsPage = () => {
   )
 }
 
-FormsPage.getLayout = function getLayout(page: ReactElement) {
+FeedbackFormsPage.getLayout = function getLayout(page: ReactElement) {
   return <LayoutAuthenticated>{page}</LayoutAuthenticated>
 }
 
-export default FormsPage
+export default FeedbackFormsPage

@@ -36,18 +36,37 @@ const datasetObject = (color: string, points: number) => {
   }
 }
 
-export const sampleChartData = (points = 9) => {
+export const sampleChartData = (points = 12) => {
   const labels = []
 
+  // Loop to generate random numbers for labels
   for (let i = 1; i <= points; i++) {
-    labels.push(`0${i}`)
+    const randomNumber = Math.floor(Math.random() * 11); 
+    labels.push(`${randomNumber}`)
   }
 
   return {
     labels,
     datasets: [
       datasetObject('primary', points),
+      datasetObject('danger', points),
       datasetObject('info', points),
+    ],
+  }
+}
+
+
+export const samplePieChartData = (points = 12) => {
+  const labels = []
+
+  for (let i = 1; i <= points; i++) {
+    labels.push(`${i}`)
+  }
+
+  return {
+    labels,
+    datasets: [
+      datasetObject('primary', points),
       datasetObject('danger', points),
     ],
   }

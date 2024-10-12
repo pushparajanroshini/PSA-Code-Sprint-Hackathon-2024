@@ -1,7 +1,6 @@
 import {
   mdiAccount,
-  mdiCogOutline,
-  mdiEmail,
+  mdiInbox,
   mdiLogout,
   mdiThemeLightDark,
 } from '@mdi/js'
@@ -17,12 +16,8 @@ const menuNavBar: MenuNavBarItem[] = [
         href: '/profile',
       },
       {
-        icon: mdiCogOutline,
-        label: 'Settings',
-      },
-      {
-        icon: mdiEmail,
-        label: 'Messages',
+        icon: mdiInbox,
+        label: 'Notifications',
       },
       {
         isDivider: true,
