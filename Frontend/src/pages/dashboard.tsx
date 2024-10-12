@@ -1,10 +1,9 @@
 import {
   mdiAccountMultiple,
-  mdiCartOutline,
-  mdiChartPie,
-  mdiChartTimelineVariant,
-  mdiMonitorCellphone,
-  mdiReload,
+  mdiChartLine,
+  mdiLibrary,
+  mdiLightbulb,
+  mdiStar,
 } from '@mdi/js'
 import Head from 'next/head'
 import React, { useState } from 'react'
@@ -14,29 +13,25 @@ import LayoutAuthenticated from '../layouts/Authenticated'
 import SectionMain from '../components/Section/Main'
 import SectionTitleLineWithButton from '../components/Section/TitleLineWithButton'
 import CardBoxWidget from '../components/CardBox/Widget'
-import { useSampleClients, useSampleTransactions } from '../hooks/sampleData'
-import CardBoxTransaction from '../components/CardBox/Transaction'
-import { Client, Transaction } from '../interfaces'
-import CardBoxClient from '../components/CardBox/Client'
 import CardBox from '../components/CardBox'
 import { sampleChartData } from '../components/ChartLineSample/config'
 import ChartLineSample from '../components/ChartLineSample'
 import NotificationBar from '../components/NotificationBar'
-import TableSampleClients from '../components/Table/SampleClients'
+import TableSampleCourses from '../components/Table/SampleCourses'
 import { getPageTitle } from '../config'
 
 const DashboardPage = () => {
-  const { clients } = useSampleClients()
-  const { transactions } = useSampleTransactions()
-
-  const clientsListed = clients.slice(0, 4)
-
   const [chartData, setChartData] = useState(sampleChartData())
 
-  const fillChartData = (e: React.MouseEvent) => {
-    e.preventDefault()
+  const [currentYearIndex, setCurrentYearIndex] = useState(0);
 
-    setChartData(sampleChartData())
+  const years = [2022, 2023, 2024];
+
+  const fillChartData = (e: React.MouseEvent) => {
+      e.preventDefault()
+
+      setChartData(sampleChartData())
+      setCurrentYearIndex((prevIndex) => (prevIndex + 1) % years.length);
   }
 
   return (
@@ -46,6 +41,11 @@ const DashboardPage = () => {
       </Head>
       <SectionMain>
 
+      <NotificationBar color="info" icon={mdiLightbulb}>
+          <b>Start learning today from 1000+ available courses!</b>
+        </NotificationBar>
+
+
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 mb-6">
           <CardBoxWidget
             trendLabel="12%"
@@ -53,58 +53,51 @@ const DashboardPage = () => {
             trendColor="success"
             icon={mdiAccountMultiple}
             iconColor="success"
-            number={512}
-            label="Clients"
+            number={26480}
+            label="Total Learners"
           />
           <CardBoxWidget
             trendLabel="16%"
             trendType="down"
             trendColor="danger"
-            icon={mdiCartOutline}
+            icon={mdiLibrary}
             iconColor="info"
-            number={7770}
-            numberPrefix="$"
-            label="Sales"
+            number={5770}
+            label="Learners Online"
           />
           <CardBoxWidget
-            trendLabel="Overflow"
+            trendLabel="Top 10%"
             trendType="warning"
             trendColor="warning"
-            icon={mdiChartTimelineVariant}
+            icon={mdiStar}
             iconColor="danger"
             number={256}
-            numberSuffix="%"
-            label="Performance"
+            label="Your Points"
           />
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
-          <div className="flex flex-col justify-between">
-            {transactions.map((transaction: Transaction) => (
-              <CardBoxTransaction key={transaction.id} transaction={transaction} />
-            ))}
-          </div>
-          <div className="flex flex-col justify-between">
-            {clientsListed.map((client: Client) => (
-              <CardBoxClient key={client.id} client={client} />
-            ))}
-          </div>
-        </div>
-
-        <SectionTitleLineWithButton icon={mdiChartPie} title="Trends overview">
-          <Button icon={mdiReload} color="whiteDark" onClick={fillChartData} />
+        <SectionTitleLineWithButton icon={mdiChartLine} title="Course Completion" >
+        <Button
+      color="contrast"
+      onClick={fillChartData}
+      label={`${years[currentYearIndex]}`} 
+    />
         </SectionTitleLineWithButton>
 
         <CardBox className="mb-6">{chartData && <ChartLineSample data={chartData} />}</CardBox>
 
-        <SectionTitleLineWithButton icon={mdiAccountMultiple} title="Clients" />
+      <div className="flex space-x-4 text-lg font-semibold">
+        <p className="text-green-500">Green: Your progress</p>
+        <p className="text-black-500">   |   </p>
+        <p className="text-blue-500">Blue: Your group's progress</p>
+        <p className="text-black-500">   |   </p>
+        <p className="text-red-500">Red: Average user's progress</p>
+      </div>
 
-        <NotificationBar color="info" icon={mdiMonitorCellphone}>
-          <b>Responsive table.</b> Collapses on mobile
-        </NotificationBar>
+        <SectionTitleLineWithButton icon={mdiAccountMultiple} title="My Courses" />
 
         <CardBox hasTable>
-          <TableSampleClients />
+          <TableSampleCourses />
         </CardBox>
       </SectionMain>
     </>

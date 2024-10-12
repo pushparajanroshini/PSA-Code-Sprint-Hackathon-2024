@@ -67,6 +67,14 @@ export type Client = {
   created_mm_dd_yyyy: string
 }
 
+export type Courses = {
+  name: string
+  status: string
+  category: string
+  progress: number
+  started_mm_dd_yyyy: string
+}
+
 export type UserForm = {
   name: string
   email: string

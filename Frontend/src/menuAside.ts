@@ -1,13 +1,10 @@
 import {
-  mdiAccountCircle,
   mdiMonitor,
-  mdiLock,
   mdiSquareEditOutline,
-  mdiTable,
-  mdiViewList,
-  mdiTelevisionGuide,
-  mdiResponsive,
-  mdiPalette,
+  mdiRobotExcitedOutline,
+  mdiAccountMultiple,
+  mdiLightbulb,
+  mdiCash,
 } from '@mdi/js'
 import { MenuAsideItem } from './interfaces'
 
@@ -18,41 +15,29 @@ const menuAside: MenuAsideItem[] = [
     label: 'Dashboard',
   },
   {
-    href: '/groups',
-    label: 'Groups',
-    icon: mdiTable,
+    href: '/my-learning',
+    icon: mdiLightbulb,
+    label: 'My Learning',
   },
   {
-    href: '/forms',
-    label: 'Forms',
+    href: '/chatbot',
+    icon: mdiRobotExcitedOutline,
+    label: 'Chatbot',
+  },
+  {
+    href: '/groups',
+    label: 'Groups',
+    icon: mdiAccountMultiple,
+  },
+  {
+    href: '/feedback-forms',
+    label: 'Feedback',
     icon: mdiSquareEditOutline,
   },
   {
-    href: '/ui',
-    label: 'UI',
-    icon: mdiTelevisionGuide,
-  },
-  {
-    href: '/profile',
-    label: 'Profile',
-    icon: mdiAccountCircle,
-  },
-  {
-    href: '/login',
-    label: 'Login',
-    icon: mdiLock,
-  },
-  {
-    label: 'Dropdown',
-    icon: mdiViewList,
-    menu: [
-      {
-        label: 'Item One',
-      },
-      {
-        label: 'Item Two',
-      },
-    ],
+    href: '/rewards',
+    label: 'Rewards',
+    icon: mdiCash,
   },
 ]
 

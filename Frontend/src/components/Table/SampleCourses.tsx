@@ -1,22 +1,22 @@
 import { mdiEye, mdiTrashCan } from '@mdi/js'
 import React, { useState } from 'react'
-import { useSampleClients } from '../../hooks/sampleData'
-import { Client } from '../../interfaces'
+import { useSampleCourses } from '../../hooks/sampleData'
+import { Courses } from '../../interfaces'
 import Button from '../Button'
 import Buttons from '../Buttons'
 import CardBoxModal from '../CardBox/Modal'
 import UserAvatar from '../UserAvatar'
 
-const TableSampleClients = () => {
-  const { clients } = useSampleClients()
+const TableSampleCourses = () => {
+  const { courses } = useSampleCourses()
 
   const perPage = 10
 
   const [currentPage, setCurrentPage] = useState(0)
 
-  const clientsPaginated = clients.slice(perPage * currentPage, perPage * (currentPage + 1))
+  const coursesPaginated = courses.slice(perPage * currentPage, perPage * (currentPage + 1))
 
-  const numPages = clients.length / perPage
+  const numPages = courses.length / perPage
 
   const pagesList = []
 
@@ -35,79 +35,59 @@ const TableSampleClients = () => {
   return (
     <>
       <CardBoxModal
-        title="Sample modal"
+        title="Confirmation"
         buttonColor="info"
-        buttonLabel="Done"
+        buttonLabel="Proceed"
         isActive={isModalInfoActive}
         onConfirm={handleModalAction}
         onCancel={handleModalAction}
       >
         <p>
-          Lorem ipsum dolor sit amet <b>adipiscing elit</b>
+          <b>You will be directed to an external website.</b>
         </p>
-        <p>This is sample modal</p>
-      </CardBoxModal>
-
-      <CardBoxModal
-        title="Please confirm"
-        buttonColor="danger"
-        buttonLabel="Confirm"
-        isActive={isModalTrashActive}
-        onConfirm={handleModalAction}
-        onCancel={handleModalAction}
-      >
-        <p>
-          Lorem ipsum dolor sit amet <b>adipiscing elit</b>
-        </p>
-        <p>This is sample modal</p>
+        <p>Please keep this tab open for progress tracking.</p>
       </CardBoxModal>
 
       <table>
         <thead>
           <tr>
             <th />
-            <th>Group Name</th>
-            <th>Company</th>
+            <th>Name</th>
+            <th>Category</th>
             <th>Platform</th>
-            <th>Points</th>
-            <th>Created</th>
+            <th>Progress</th>
+            <th>Date Enrolled</th>
             <th />
           </tr>
         </thead>
         <tbody>
-          {clientsPaginated.map((client: Client) => (
-            <tr key={client.id}>
+          {coursesPaginated.map((courses: Courses) => (
+            <tr key={courses.name}>
               <td className="border-b-0 lg:w-6 before:hidden">
               </td>
-              <td data-label="Name">{client.name}</td>
-              <td data-label="Company">{client.company}</td>
-              <td data-label="City">{client.number_of_participants}</td>
+              <td data-label="Name">{courses.name}</td>
+              <td data-label="Category">{courses.category}</td>
+              <td data-label="Learning Platform">{courses.platform}</td>
               <td data-label="Progress" className="lg:w-32">
                 <progress
                   className="flex w-2/5 self-center lg:w-full"
                   max="100"
-                  value={client.progress}
+                  value={courses.progress}
                 >
-                  {client.progress}
+                  {courses.progress}
                 </progress>
               </td>
-              <td data-label="Created" className="lg:w-1 whitespace-nowrap">
-                <small className="text-gray-500 dark:text-slate-400">{client.created}</small>
+              <td data-label="Date Enrolled" className="lg:w-1 whitespace-nowrap">
+                <small className="text-gray-500 dark:text-slate-400">{courses.started_mm_dd_yyyy}</small>
               </td>
               <td className="before:hidden lg:w-1 whitespace-nowrap">
                 <Buttons type="justify-start lg:justify-end" noWrap>
                   <Button
-                    color="info"
-                    icon={mdiEye}
+                    color="success"
+                    label="Continue Learning"
                     onClick={() => setIsModalInfoActive(true)}
                     small
                   />
-                  {/* <Button
-                    color="danger"
-                    icon={mdiTrashCan}
-                    onClick={() => setIsModalTrashActive(true)}
-                    small
-                  /> */}
                 </Buttons>
               </td>
             </tr>
@@ -137,4 +117,4 @@ const TableSampleClients = () => {
   )
 }
 
-export default TableSampleClients
+export default TableSampleCourses

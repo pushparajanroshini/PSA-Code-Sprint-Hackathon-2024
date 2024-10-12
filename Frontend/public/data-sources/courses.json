@@ -1,0 +1,245 @@
+{
+    "data": [
+      {
+        "id": 1,
+        "name": "Basic coding with Python",
+        "platform": "Coursera",
+        "progress": 70,
+        "category": "Technology",
+        "started_mm_dd_yyyy": "03-03-2023"
+      },
+      {
+        "id": 2,
+        "name": "Machine Learning A-Z",
+        "platform": "Udemy",
+        "progress": 26,
+        "category": "Data Science",
+        "started_mm_dd_yyyy": "01-15-2022"
+      },
+      {
+        "id": 3,
+        "name": "Web Development Bootcamp",
+        "platform": "Udemy",
+        "progress": 50,
+        "category": "Technology",
+        "started_mm_dd_yyyy": "09-10-2023"
+      },
+      {
+        "id": 4,
+        "name": "Excel Essential Training",
+        "platform": "Linkedin Learning",
+        "progress": 58,
+        "category": "Business",
+        "started_mm_dd_yyyy": "02-10-2023"
+      },
+      {
+        "id": 5,
+        "name": "Introduction to Cloud Computing",
+        "platform": "Coursera",
+        "progress": 30,
+        "category": "Technology",
+        "started_mm_dd_yyyy": "07-01-2023"
+      },
+      {
+        "id": 6,
+        "name": "Advanced SQL for Data Analysis",
+        "platform": "Udemy",
+        "progress": 38,
+        "category": "Data Science",
+        "started_mm_dd_yyyy": "08-25-2022"
+      },
+      {
+        "id": 7,
+        "name": "Leadership Foundations",
+        "platform": "Linkedin Learning",
+        "progress": 45,
+        "category": "Business",
+        "started_mm_dd_yyyy": "03-15-2024"
+      },
+      {
+        "id": 8,
+        "name": "React - The Complete Guide",
+        "platform": "Udemy",
+        "progress": 20,
+        "category": "Technology",
+        "started_mm_dd_yyyy": "04-22-2024"
+      },
+      {
+        "id": 9,
+        "name": "Python for Data Science",
+        "platform": "Coursera",
+        "progress": 58,
+        "category": "Data Science",
+        "started_mm_dd_yyyy": "11-05-2022"
+      },
+      {
+        "id": 10,
+        "name": "Effective Time Management",
+        "platform": "Linkedin Learning",
+        "progress": 36,
+        "category": "Business",
+        "started_mm_dd_yyyy": "12-01-2022"
+      },
+      {
+        "id": 11,
+        "name": "AWS Certified Solutions Architect",
+        "platform": "Udemy",
+        "progress": 15,
+        "category": "Technology",
+        "started_mm_dd_yyyy": "05-10-2024"
+      },
+      {
+        "id": 12,
+        "name": "Introduction to AI",
+        "platform": "Coursera",
+        "progress": 25,
+        "category": "Technology",
+        "started_mm_dd_yyyy": "06-20-2024"
+      },
+      {
+        "id": 13,
+        "name": "Java Programming Masterclass",
+        "platform": "Udemy",
+        "progress": 49,
+        "category": "Technology",
+        "started_mm_dd_yyyy": "09-18-2022"
+      },
+      {
+        "id": 14,
+        "name": "Emotional Intelligence at Work",
+        "platform": "Linkedin Learning",
+        "progress": 50,
+        "category": "Business",
+        "started_mm_dd_yyyy": "08-03-2023"
+      },
+      {
+        "id": 15,
+        "name": "Kubernetes for Beginners",
+        "platform": "Coursera",
+        "progress": 10,
+        "category": "Technology",
+        "started_mm_dd_yyyy": "10-05-2024"
+      },
+      {
+        "id": 16,
+        "name": "Financial Modeling and Valuation",
+        "platform": "Udemy",
+        "progress": 80,
+        "category": "Finance",
+        "started_mm_dd_yyyy": "02-20-2023"
+      },
+      {
+        "id": 17,
+        "name": "Introduction to Data Visualization",
+        "platform": "Linkedin Learning",
+        "progress": 80,
+        "category": "Data Science",
+        "started_mm_dd_yyyy": "03-11-2023"
+      },
+      {
+        "id": 18,
+        "name": "Node.js for Beginners",
+        "platform": "Udemy",
+        "progress": 40,
+        "category": "Technology",
+        "started_mm_dd_yyyy": "07-12-2024"
+      },
+      {
+        "id": 19,
+        "name": "Digital Marketing Strategy",
+        "platform": "Linkedin Learning",
+        "progress": 90,
+        "category": "Business",
+        "started_mm_dd_yyyy": "11-02-2023"
+      },
+      {
+        "id": 20,
+        "name": "Deep Learning Specialization",
+        "platform": "Coursera",
+        "progress": 60,
+        "category": "Data Science",
+        "started_mm_dd_yyyy": "04-07-2024"
+      },
+      {
+        "id": 21,
+        "name": "SQL for Data Science",
+        "platform": "Coursera",
+        "progress": 90,
+        "category": "Data Science",
+        "started_mm_dd_yyyy": "01-20-2023"
+      },
+      {
+        "id": 22,
+        "name": "Public Speaking Foundations",
+        "platform": "Linkedin Learning",
+        "progress": 50,
+        "category": "Business",
+        "started_mm_dd_yyyy": "02-05-2024"
+      },
+      {
+        "id": 23,
+        "name": "Django for Web Development",
+        "platform": "Udemy",
+        "progress": 90,
+        "category": "Technology",
+        "started_mm_dd_yyyy": "03-30-2023"
+      },
+      {
+        "id": 24,
+        "name": "Blockchain Basics",
+        "platform": "Coursera",
+        "progress": 35,
+        "category": "Technology",
+        "started_mm_dd_yyyy": "06-18-2024"
+      },
+      {
+        "id": 25,
+        "name": "Agile Project Management",
+        "platform": "Linkedin Learning",
+        "progress": 90,
+        "category": "Business",
+        "started_mm_dd_yyyy": "10-12-2022"
+      },
+      {
+        "id": 26,
+        "name": "Data Structures and Algorithms",
+        "platform": "Udemy",
+        "progress": 55,
+        "category": "Technology",
+        "started_mm_dd_yyyy": "05-25-2024"
+      },
+      {
+        "id": 27,
+        "name": "Google Cloud Fundamentals",
+        "platform": "Coursera",
+        "progress": 90,
+        "category": "Technology",
+        "started_mm_dd_yyyy": "08-08-2022"
+      },
+      {
+        "id": 28,
+        "name": "Marketing Analytics",
+        "platform": "Linkedin Learning",
+        "progress": 65,
+        "category": "Business",
+        "started_mm_dd_yyyy": "09-07-2024"
+      },
+      {
+        "id": 29,
+        "name": "Full-Stack Web Development",
+        "platform": "Udemy",
+        "progress": 90,
+        "category": "Technology",
+        "started_mm_dd_yyyy": "12-18-2022"
+      },
+      {
+        "id": 30,
+        "name": "Cybersecurity Fundamentals",
+        "platform": "Coursera",
+        "progress": 90,
+        "category": "Technology",
+        "started_mm_dd_yyyy": "11-11-2023"
+      }
+    ]
+  }
+  

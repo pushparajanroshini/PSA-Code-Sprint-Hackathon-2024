@@ -11,27 +11,25 @@ import SectionTitleLineWithButton from '../components/Section/TitleLineWithButto
 import TableSampleClients from '../components/Table/SampleClients'
 import { getPageTitle } from '../config'
 
-const TablesPage = () => {
+const GroupsPage = () => {
   return (
     <>
       <Head>
-        <title>{getPageTitle('Tables')}</title>
+        <title>{getPageTitle('Groups')}</title>
       </Head>
       <SectionMain>
 
-        <NotificationBar color="info" icon={mdiMonitorCellphone}>
-          <b>Responsive table.</b> Collapses on mobile
+        <NotificationBar color="success" icon={mdiMonitorCellphone}>
+          <b>Your group has earned 3 points this week!</b>
         </NotificationBar>
+
+        <SectionTitleLineWithButton icon={mdiTableOff} title="View All Groups" />
 
         <CardBox className="mb-6" hasTable>
           <TableSampleClients />
         </CardBox>
 
         <SectionTitleLineWithButton icon={mdiTableOff} title="Empty variation" />
-
-        <NotificationBar color="danger" icon={mdiTableOff}>
-          <b>Empty card.</b> When there&apos;s nothing to show
-        </NotificationBar>
 
         <CardBox>
           <CardBoxComponentEmpty />
@@ -41,8 +39,8 @@ const TablesPage = () => {
   )
 }
 
-TablesPage.getLayout = function getLayout(page: ReactElement) {
+GroupsPage.getLayout = function getLayout(page: ReactElement) {
   return <LayoutAuthenticated>{page}</LayoutAuthenticated>
 }
 
-export default TablesPage
+export default GroupsPage

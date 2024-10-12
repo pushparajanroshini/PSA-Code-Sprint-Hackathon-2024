@@ -15,7 +15,7 @@ import SectionMain from '../components/Section/Main'
 import SectionTitle from '../components/Section/Title'
 import { getPageTitle } from '../config'
 
-const FormsPage = () => {
+const ForgotPasswordPage = () => {
   return (
     <>
       <Head>
@@ -134,8 +134,8 @@ const FormsPage = () => {
   )
 }
 
-FormsPage.getLayout = function getLayout(page: ReactElement) {
+ForgotPasswordPage.getLayout = function getLayout(page: ReactElement) {
   return <LayoutAuthenticated>{page}</LayoutAuthenticated>
 }
 
-export default FormsPage
+export default ForgotPasswordPage
