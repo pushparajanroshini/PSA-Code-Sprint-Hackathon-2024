@@ -1,16 +1,13 @@
-import {  mdiBook, mdiBookAccount, mdiRobot, mdiLibrary} from '@mdi/js'
+import {  mdiBook, mdiRobot, mdiLibrary} from '@mdi/js'
 import Head from 'next/head'
-import React, { ReactElement, useState } from 'react'
-import Button from '../components/Button'
+import React, { ReactElement } from 'react'
 import CardBox from '../components/CardBox'
 import LayoutAuthenticated from '../layouts/Authenticated'
 import NotificationBar from '../components/NotificationBar'
 import SectionMain from '../components/Section/Main'
 import SectionTitleLineWithButton from '../components/Section/TitleLineWithButton'
 import TableSampleCourses from '../components/Table/SampleCourses'
-import TableSampleCompletedCourses from '../components/Table/SampleCompletedCourses'
 import { getPageTitle } from '../config'
-import { sampleChartData } from '../components/ChartLineSample/config'
 import TableSampleNewCourses from '../components/Table/SampleNewCourses'
 
 const MyLearningPage = () => {
