@@ -1,5 +1,8 @@
-# PSA-capybaras
+# PSA Codesprint
+Team name: capybaras
+Team members: Boxuan, Roshini
 
-## TODO: chatbot page, forget password page, rewards page, discussions page
+# To set up steps:
+To set up, use "npm install" -> "npm run dev"
 
-## To set up, use git clone -> npm install -> npm run dev
+# Youtube video link: 

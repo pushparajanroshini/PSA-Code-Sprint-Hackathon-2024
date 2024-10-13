@@ -1,10 +1,10 @@
 import {
   mdiMonitor,
-  mdiSquareEditOutline,
   mdiRobotExcitedOutline,
   mdiAccountMultiple,
   mdiLightbulb,
   mdiCash,
+  mdiFrequentlyAskedQuestions,
 } from '@mdi/js'
 import { MenuAsideItem } from './interfaces'
 
@@ -30,9 +30,9 @@ const menuAside: MenuAsideItem[] = [
     icon: mdiAccountMultiple,
   },
   {
-    href: '/feedback-forms',
-    label: 'Feedback',
-    icon: mdiSquareEditOutline,
+    href: '/discussion',
+    label: 'Discussion',
+    icon: mdiFrequentlyAskedQuestions,
   },
   {
     href: '/rewards',

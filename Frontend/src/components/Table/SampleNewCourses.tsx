@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
-import { useSampleCourses } from '../../hooks/sampleData'
-import { Courses } from '../../interfaces'
+import { useSampleNewCourses } from '../../hooks/sampleData'
+import { NewCourses } from '../../interfaces'
 import Button from '../Button'
 import Buttons from '../Buttons'
 import CardBoxModal from '../CardBox/Modal'
 
-const TableSampleCourses = () => {
-  const { courses } = useSampleCourses()
+
+const TableSampleNewCourses = () => {
+  const { courses } = useSampleNewCourses()
 
   const perPage = 10
 
@@ -41,7 +42,6 @@ const TableSampleCourses = () => {
         <p>
           <b>You will be directed to an external website.</b>
         </p>
-        <p>Please keep this tab open for progress tracking.</p>
       </CardBoxModal>
 
       <table>
@@ -51,36 +51,24 @@ const TableSampleCourses = () => {
             <th>Name</th>
             <th>Category</th>
             <th>Platform</th>
-            <th>Progress</th>
-            <th>Date Enrolled</th>
+            <th>Enroll</th>
             <th />
           </tr>
         </thead>
         <tbody>
-          {coursesPaginated.map((courses: Courses) => (
-            <tr key={courses.name}>
+          {coursesPaginated.map((newCourses: NewCourses) => (
+            <tr key={newCourses.name}>
               <td className="border-b-0 lg:w-6 before:hidden">
               </td>
-              <td data-label="Name">{courses.name}</td>
-              <td data-label="Category">{courses.category}</td>
-              <td data-label="Learning Platform">{courses.platform}</td>
-              <td data-label="Progress" className="lg:w-32">
-                <progress
-                  className="flex w-2/5 self-center lg:w-full"
-                  max="100"
-                  value={courses.progress}
-                >
-                  {courses.progress}
-                </progress>
-              </td>
-              <td data-label="Date Enrolled" className="lg:w-1 whitespace-nowrap">
-                <small className="text-gray-500 dark:text-slate-400">{courses.started_mm_dd_yyyy}</small>
-              </td>
+              <td data-label="Name">{newCourses.name}</td>
+              <td data-label="Category">{newCourses.category}</td>
+              <td data-label="Learning Platform">{newCourses.platform}</td>
+
               <td className="before:hidden lg:w-1 whitespace-nowrap">
                 <Buttons type="justify-start lg:justify-end" noWrap>
                   <Button
-                    color="success"
-                    label="Continue Learning"
+                    color="info"
+                    label="Enroll"
                     outline={true}
                     onClick={() => setIsModalInfoActive(true)}
                     small
@@ -114,4 +102,4 @@ const TableSampleCourses = () => {
   )
 }
 
-export default TableSampleCourses
+export default TableSampleNewCourses

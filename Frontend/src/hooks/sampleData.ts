@@ -21,6 +21,26 @@ export const useSampleCourses = () => {
   }
 }
 
+export const useSampleCoursesCompleted = () => {
+  const { data, error } = useSWR('/learner-buddies/data-sources/completedCourses.json', fetcher)
+
+  return {
+    courses: data?.data ?? [],
+    isLoading: !error && !data,
+    isError: error,
+  }
+}
+
+export const useSampleNewCourses = () => {
+  const { data, error } = useSWR('/learner-buddies/data-sources/newCourses.json', fetcher)
+
+  return {
+    courses: data?.data ?? [],
+    isLoading: !error && !data,
+    isError: error,
+  }
+}
+
 export const useSampleTransactions = () => {
   const { data, error } = useSWR('/learner-buddies/data-sources/history.json', fetcher)
 

@@ -1,0 +1,95 @@
+{
+    "data": [
+      {
+        "id": 1,
+        "name": "Introduction to Machine Learning",
+        "platform": "Coursera",
+        "progress": 100,
+        "category": "Data Science",
+        "started_mm_dd_yyyy": "01-15-2022",
+        "completed_mm_dd_yyyy": "03-20-2022"
+      },
+      {
+        "id": 2,
+        "name": "React - The Complete Guide",
+        "platform": "Udemy",
+        "progress": 100,
+        "category": "Web Development",
+        "started_mm_dd_yyyy": "03-10-2023",
+        "completed_mm_dd_yyyy": "05-22-2023"
+      },
+      {
+        "id": 3,
+        "name": "Project Management Essentials",
+        "platform": "Linkedin Learning",
+        "progress": 100,
+        "category": "Business",
+        "started_mm_dd_yyyy": "06-12-2022",
+        "completed_mm_dd_yyyy": "08-01-2022"
+      },
+      {
+        "id": 4,
+        "name": "Python for Data Science and AI",
+        "platform": "Coursera",
+        "progress": 100,
+        "category": "Data Science",
+        "started_mm_dd_yyyy": "07-08-2022",
+        "completed_mm_dd_yyyy": "09-10-2022"
+      },
+      {
+        "id": 5,
+        "name": "Advanced SQL for Data Analysts",
+        "platform": "Udemy",
+        "progress": 100,
+        "category": "Data Science",
+        "started_mm_dd_yyyy": "11-01-2023",
+        "completed_mm_dd_yyyy": "12-20-2023"
+      },
+      {
+        "id": 6,
+        "name": "Effective Communication Skills",
+        "platform": "Linkedin Learning",
+        "progress": 100,
+        "category": "Business",
+        "started_mm_dd_yyyy": "02-20-2023",
+        "completed_mm_dd_yyyy": "04-05-2023"
+      },
+      {
+        "id": 7,
+        "name": "Introduction to AWS",
+        "platform": "Coursera",
+        "progress": 100,
+        "category": "Cloud Computing",
+        "started_mm_dd_yyyy": "09-25-2023",
+        "completed_mm_dd_yyyy": "09-30-2023"
+      },
+      {
+        "id": 8,
+        "name": "Full-Stack Web Development Bootcamp",
+        "platform": "Udemy",
+        "progress": 100,
+        "category": "Web Development",
+        "started_mm_dd_yyyy": "04-11-2023",
+        "completed_mm_dd_yyyy": "07-15-2023"
+      },
+      {
+        "id": 9,
+        "name": "Financial Modeling and Analysis",
+        "platform": "Linkedin Learning",
+        "progress": 100,
+        "category": "Finance",
+        "started_mm_dd_yyyy": "05-30-2022",
+        "completed_mm_dd_yyyy": "07-20-2022"
+      },
+      {
+        "id": 10,
+        "name": "Introduction to Cybersecurity",
+        "platform": "Coursera",
+        "progress": 100,
+        "category": "Security",
+        "started_mm_dd_yyyy": "10-14-2023",
+        "completed_mm_dd_yyyy": "09-15-2024"
+      }
+    ]
+  }
+  

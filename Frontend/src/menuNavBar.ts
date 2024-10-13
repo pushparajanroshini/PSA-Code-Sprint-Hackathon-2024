@@ -1,6 +1,5 @@
 import {
   mdiAccount,
-  mdiInbox,
   mdiLogout,
   mdiThemeLightDark,
 } from '@mdi/js'
@@ -14,19 +13,7 @@ const menuNavBar: MenuNavBarItem[] = [
         icon: mdiAccount,
         label: 'My Profile',
         href: '/profile',
-      },
-      {
-        icon: mdiInbox,
-        label: 'Notifications',
-      },
-      {
-        isDivider: true,
-      },
-      {
-        icon: mdiLogout,
-        label: 'Log Out',
-        isLogout: true,
-      },
+      }
     ],
   },
   {
@@ -38,6 +25,7 @@ const menuNavBar: MenuNavBarItem[] = [
   {
     icon: mdiLogout,
     label: 'Log out',
+    href: '/login',
     isDesktopNoLabel: true,
     isLogout: true,
   },

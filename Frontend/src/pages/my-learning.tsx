@@ -1,34 +1,19 @@
-import { mdiTableOff, mdiChartPie, mdiReload, mdiChartLine, mdiBook, mdiLightbulb, mdiAbTesting, mdiBookAccount, mdiRobot, mdiRobotHappy} from '@mdi/js'
+import {  mdiBook, mdiBookAccount, mdiRobot, mdiLibrary} from '@mdi/js'
 import Head from 'next/head'
 import React, { ReactElement, useState } from 'react'
 import Button from '../components/Button'
 import CardBox from '../components/CardBox'
-import CardBoxComponentEmpty from '../components/CardBox/Component/Empty'
 import LayoutAuthenticated from '../layouts/Authenticated'
 import NotificationBar from '../components/NotificationBar'
 import SectionMain from '../components/Section/Main'
 import SectionTitleLineWithButton from '../components/Section/TitleLineWithButton'
 import TableSampleCourses from '../components/Table/SampleCourses'
+import TableSampleCompletedCourses from '../components/Table/SampleCompletedCourses'
 import { getPageTitle } from '../config'
 import { sampleChartData } from '../components/ChartLineSample/config'
-import ChartLineSample from '../components/ChartLineSample'
-
+import TableSampleNewCourses from '../components/Table/SampleNewCourses'
 
 const MyLearningPage = () => {
-
-    const [chartData, setChartData] = useState(sampleChartData())
-
-    const [currentYearIndex, setCurrentYearIndex] = useState(0);
-
-    const years = [2022, 2023, 2024];
-
-    const fillChartData = (e: React.MouseEvent) => {
-        e.preventDefault()
-
-        setChartData(sampleChartData())
-        setCurrentYearIndex((prevIndex) => (prevIndex + 1) % years.length);
-    }
-
   return (
     <>
       <Head>
@@ -40,24 +25,17 @@ const MyLearningPage = () => {
           <b>Not sure which course to take? Try out the "Suggest a course" feature from our chatbot!</b>
         </NotificationBar>
 
-        <SectionTitleLineWithButton icon={mdiBookAccount} title="My Courses" />
+        <SectionTitleLineWithButton icon={mdiLibrary} title="My Courses" />
 
         <CardBox className="mb-6" hasTable>
           <TableSampleCourses />
         </CardBox>
 
-        <div className="grid grid-cols-1 gap-2 lg:grid-cols-2 mb-2">
+        <SectionTitleLineWithButton icon={mdiBook} title="Enroll in Courses" />
 
-        </div>
-
-        <SectionTitleLineWithButton icon={mdiRobotHappy} title="Chatbot" >
-        <Button
-      color="contrast"
-    //   onClick={fillChartData}
-      label={`New Chat`} 
-    />
-        </SectionTitleLineWithButton>
-
+        <CardBox className="mb-6" hasTable>
+          <TableSampleNewCourses />
+        </CardBox>
 
       </SectionMain>
     </>

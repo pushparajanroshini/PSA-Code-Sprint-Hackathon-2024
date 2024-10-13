@@ -41,8 +41,7 @@ export const sampleChartData = (points = 12) => {
 
   // Loop to generate random numbers for labels
   for (let i = 1; i <= points; i++) {
-    const randomNumber = Math.floor(Math.random() * 11); 
-    labels.push(`${randomNumber}`)
+    labels.push(`${i}`)
   }
 
   return {

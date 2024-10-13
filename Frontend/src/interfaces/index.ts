@@ -75,6 +75,21 @@ export type Courses = {
   started_mm_dd_yyyy: string
 }
 
+export type CoursesCompleted = {
+  name: string
+  category: string
+  progress: number
+  started_mm_dd_yyyy: string
+  completed_mm_dd_yyyy: string
+}
+
+export type NewCourses = {
+  name: string
+  platform: string
+  category: string
+}
+
+
 export type UserForm = {
   name: string
   email: string
