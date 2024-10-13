@@ -1,0 +1,365 @@
+{
+    "data": [
+      {
+        "id": 1,
+        "name": "Introduction to Machine Learning",
+        "platform": "Coursera",
+        "category": "Data Science"
+      },
+      {
+        "id": 2,
+        "name": "React - The Complete Guide",
+        "platform": "Udemy",
+        "category": "Web Development"
+      },
+      {
+        "id": 3,
+        "name": "Mindfulness-Based Stress Reduction",
+        "platform": "Coursera",
+        "category": "Mindfulness"
+      },
+      {
+        "id": 4,
+        "name": "Psychology 101: Introduction to Human Behavior",
+        "platform": "Coursera",
+        "category": "Psychology"
+      },
+      {
+        "id": 5,
+        "name": "Mindfulness Meditation for Beginners",
+        "platform": "Udemy",
+        "category": "Mindfulness"
+      },
+      {
+        "id": 6,
+        "name": "Effective Communication Skills",
+        "platform": "Linkedin Learning",
+        "category": "Business"
+      },
+      {
+        "id": 7,
+        "name": "Introduction to Biology",
+        "platform": "Coursera",
+        "category": "Biology"
+      },
+      {
+        "id": 8,
+        "name": "Full-Stack Web Development Bootcamp",
+        "platform": "Udemy",
+        "category": "Web Development"
+      },
+      {
+        "id": 9,
+        "name": "Creative Writing: Crafting Personal Essays",
+        "platform": "Linkedin Learning",
+        "category": "English"
+      },
+      {
+        "id": 10,
+        "name": "Introduction to Cybersecurity",
+        "platform": "Coursera",
+        "category": "Security"
+      },
+      {
+        "id": 11,
+        "name": "Digital Marketing Strategy",
+        "platform": "Linkedin Learning",
+        "category": "Marketing"
+      },
+      {
+        "id": 12,
+        "name": "Kubernetes for Beginners",
+        "platform": "Coursera",
+        "category": "Cloud Computing"
+      },
+      {
+        "id": 13,
+        "name": "The Science of Well-Being",
+        "platform": "Coursera",
+        "category": "Psychology"
+      },
+      {
+        "id": 14,
+        "name": "Financial Accounting Fundamentals",
+        "platform": "Linkedin Learning",
+        "category": "Finance"
+      },
+      {
+        "id": 15,
+        "name": "Introduction to Artificial Intelligence",
+        "platform": "Coursera",
+        "category": "Data Science"
+      },
+      {
+        "id": 16,
+        "name": "Agile Project Management",
+        "platform": "Udemy",
+        "category": "Business"
+      },
+      {
+        "id": 17,
+        "name": "Leadership and Management Skills",
+        "platform": "Linkedin Learning",
+        "category": "Business"
+      },
+      {
+        "id": 18,
+        "name": "Neuroscience: Understanding the Brain",
+        "platform": "Coursera",
+        "category": "Biology"
+      },
+      {
+        "id": 19,
+        "name": "Introduction to Mindfulness",
+        "platform": "Udemy",
+        "category": "Mindfulness"
+      },
+      {
+        "id": 20,
+        "name": "Social Media Marketing Fundamentals",
+        "platform": "Linkedin Learning",
+        "category": "Marketing"
+      },
+      {
+        "id": 21,
+        "name": "Introduction to English Literature",
+        "platform": "Coursera",
+        "category": "English"
+      },
+      {
+        "id": 22,
+        "name": "Machine Learning with Python",
+        "platform": "Udemy",
+        "category": "Data Science"
+      },
+      {
+        "id": 23,
+        "name": "Sales Management",
+        "platform": "Linkedin Learning",
+        "category": "Business"
+      },
+      {
+        "id": 24,
+        "name": "Anatomy and Physiology",
+        "platform": "Coursera",
+        "category": "Biology"
+      },
+      {
+        "id": 25,
+        "name": "Docker for DevOps",
+        "platform": "Udemy",
+        "category": "DevOps"
+      },
+      {
+        "id": 26,
+        "name": "Presentation Skills for Beginners",
+        "platform": "Linkedin Learning",
+        "category": "Business"
+      },
+      {
+        "id": 27,
+        "name": "Introduction to Cognitive Psychology",
+        "platform": "Coursera",
+        "category": "Psychology"
+      },
+      {
+        "id": 28,
+        "name": "React Native - The Practical Guide",
+        "platform": "Udemy",
+        "category": "Mobile Development"
+      },
+      {
+        "id": 29,
+        "name": "Writing for Business Professionals",
+        "platform": "Linkedin Learning",
+        "category": "English"
+      },
+      {
+        "id": 30,
+        "name": "Project Management Essentials",
+        "platform": "Linkedin Learning",
+        "category": "Business"
+      },
+      {
+        "id": 31,
+        "name": "Introduction to Genetics",
+        "platform": "Coursera",
+        "category": "Biology"
+      },
+      {
+        "id": 32,
+        "name": "Positive Psychology: Resilience Skills",
+        "platform": "Udemy",
+        "category": "Psychology"
+      },
+      {
+        "id": 33,
+        "name": "Shakespearean Literature: An Overview",
+        "platform": "Linkedin Learning",
+        "category": "English"
+      },
+      {
+        "id": 34,
+        "name": "Meditation and Mindfulness for Stress Relief",
+        "platform": "Udemy",
+        "category": "Mindfulness"
+      },
+      {
+        "id": 35,
+        "name": "Cloud Architecture with AWS",
+        "platform": "Udemy",
+        "category": "Cloud Computing"
+      },
+      {
+        "id": 36,
+        "name": "Introduction to Ecology",
+        "platform": "Coursera",
+        "category": "Biology"
+      },
+      {
+        "id": 37,
+        "name": "Psychology of Happiness",
+        "platform": "Coursera",
+        "category": "Psychology"
+      },
+      {
+        "id": 38,
+        "name": "Creative Writing for Beginners",
+        "platform": "Linkedin Learning",
+        "category": "English"
+      },
+      {
+        "id": 39,
+        "name": "Mindful Eating: Building a Healthy Relationship with Food",
+        "platform": "Udemy",
+        "category": "Mindfulness"
+      },
+      {
+        "id": 40,
+        "name": "Advanced Data Structures",
+        "platform": "Coursera",
+        "category": "Data Science"
+      },
+      {
+        "id": 41,
+        "name": "Behavioral Psychology and Mental Health",
+        "platform": "Linkedin Learning",
+        "category": "Psychology"
+      },
+      {
+        "id": 42,
+        "name": "Introduction to Marine Biology",
+        "platform": "Coursera",
+        "category": "Biology"
+      },
+      {
+        "id": 43,
+        "name": "The Science of Mindfulness",
+        "platform": "Coursera",
+        "category": "Mindfulness"
+      },
+      {
+        "id": 44,
+        "name": "Creative Writing: Short Stories",
+        "platform": "Udemy",
+        "category": "English"
+      },
+      {
+        "id": 45,
+        "name": "Leadership Skills for Managers",
+        "platform": "Linkedin Learning",
+        "category": "Business"
+      },
+      {
+        "id": 46,
+        "name": "Introduction to Cognitive Science",
+        "platform": "Coursera",
+        "category": "Psychology"
+      },
+      {
+        "id": 47,
+        "name": "Introduction to Financial Markets",
+        "platform": "Coursera",
+        "category": "Finance"
+      },
+      {
+        "id": 48,
+        "name": "Web Development with Vue.js",
+        "platform": "Udemy",
+        "category": "Web Development"
+      },
+      {
+        "id": 49,
+        "name": "Content Marketing Strategy",
+        "platform": "Linkedin Learning",
+        "category": "Marketing"
+      },
+      {
+        "id": 50,
+        "name": "Anatomy for Beginners",
+        "platform": "Coursera",
+        "category": "Biology"
+      },
+      {
+        "id": 51,
+        "name": "Mindfulness for Workplace Productivity",
+        "platform": "Linkedin Learning",
+        "category": "Mindfulness"
+      },
+      {
+        "id": 52,
+        "name": "Data Science: Statistical Analysis",
+        "platform": "Coursera",
+        "category": "Data Science"
+      },
+      {
+        "id": 53,
+        "name": "Psychology of Motivation",
+        "platform": "Udemy",
+        "category": "Psychology"
+      },
+      {
+        "id": 54,
+        "name": "Effective Public Speaking",
+        "platform": "Linkedin Learning",
+        "category": "English"
+      },
+      {
+        "id": 55,
+        "name": "Biology of Aging: Mechanisms and Therapeutic Strategies",
+        "platform": "Coursera",
+        "category": "Biology"
+      },
+      {
+        "id": 56,
+        "name": "The Power of Mindfulness in Leadership",
+        "platform": "Udemy",
+        "category": "Mindfulness"
+      },
+      {
+        "id": 57,
+        "name": "Introduction to Behavioral Neuroscience",
+        "platform": "Coursera",
+        "category": "Psychology"
+      },
+      {
+        "id": 58,
+        "name": "Business Writing for Professionals",
+        "platform": "Linkedin Learning",
+        "category": "English"
+      },
+      {
+        "id": 59,
+        "name": "Mindfulness in Everyday Life",
+        "platform": "Coursera",
+        "category": "Mindfulness"
+      },
+      {
+        "id": 60,
+        "name": "Introduction to Genetic Engineering",
+        "platform": "Coursera",
+        "category": "Biology"
+      }
+    ]
+  }
+  

@@ -3,6 +3,7 @@ import {
   mdiChartLine,
   mdiLibrary,
   mdiLightbulb,
+  mdiBookAccount,
   mdiStar,
 } from '@mdi/js'
 import Head from 'next/head'
@@ -18,6 +19,7 @@ import { sampleChartData } from '../components/ChartLineSample/config'
 import ChartLineSample from '../components/ChartLineSample'
 import NotificationBar from '../components/NotificationBar'
 import TableSampleCourses from '../components/Table/SampleCourses'
+import TableSampleCompletedCourses from '../components/Table/SampleCompletedCourses'
 import { getPageTitle } from '../config'
 
 const DashboardPage = () => {
@@ -71,12 +73,12 @@ const DashboardPage = () => {
             trendColor="warning"
             icon={mdiStar}
             iconColor="danger"
-            number={256}
+            number={2560}
             label="Your Points"
           />
         </div>
 
-        <SectionTitleLineWithButton icon={mdiChartLine} title="Course Completion" >
+        <SectionTitleLineWithButton icon={mdiChartLine} title="Monthly Points" >
         <Button
       color="contrast"
       onClick={fillChartData}
@@ -87,11 +89,11 @@ const DashboardPage = () => {
         <CardBox className="mb-6">{chartData && <ChartLineSample data={chartData} />}</CardBox>
 
       <div className="flex space-x-4 text-lg font-semibold">
-        <p className="text-green-500">Green: Your progress</p>
+        <p className="text-green-500">Green: Your points</p>
         <p className="text-black-500">   |   </p>
-        <p className="text-blue-500">Blue: Your group's progress</p>
+        <p className="text-blue-500">Blue: Your group's points</p>
         <p className="text-black-500">   |   </p>
-        <p className="text-red-500">Red: Average user's progress</p>
+        <p className="text-red-500">Red: Average user's points</p>
       </div>
 
         <SectionTitleLineWithButton icon={mdiAccountMultiple} title="My Courses" />
@@ -99,6 +101,13 @@ const DashboardPage = () => {
         <CardBox hasTable>
           <TableSampleCourses />
         </CardBox>
+
+        <SectionTitleLineWithButton icon={mdiBookAccount} title="Completed Courses" />
+
+        <CardBox className="mb-6" hasTable>
+          <TableSampleCompletedCourses />
+        </CardBox>
+        
       </SectionMain>
     </>
   )
